@@ -12,6 +12,7 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// ------------------------------------------------------------------------------------------------------------------------
 // Function to calculate the car value based on the provided model and year
 function calculateCarValue(model, year) {
   try {
@@ -22,25 +23,27 @@ function calculateCarValue(model, year) {
     const alphabetPositions = [...model]
       // Filter out non-alphabetic characters (keeping only A-Z)
       .filter((char) => /[A-Z]/.test(char))
-      /* # Map each remaining character to its alphabet position (1 for A, 2 for B, etc.)
-      Let's use an example to illustrate. Consider the character 'C':
+      /* 
+      # Map each remaining character to its alphabet position (1 for A, 2 for B, etc.)
 
-      char.charCodeAt(0): This part retrieves the Unicode code point of the character. For 'C', the code point is 67.
+        Let's use an example to illustrate. Consider the character 'C':
 
-      'A'.charCodeAt(0): This part retrieves the Unicode code point of the letter 'A', which is 65.
+          * char.charCodeAt(0): This part retrieves the Unicode code point of the character. For 'C', the code point is 67.
 
-      Subtracting these two values: 67 - 65 = 2. This gives the relative position of 'C' with respect to 'A'.
+          * 'A'.charCodeAt(0): This part retrieves the Unicode code point of the letter 'A', which is 65.
 
-      Finally, add 1: 2 + 1 = 3. This adjustment is made because in the context of this code, 'A' is considered to be at position 1, 'B' at position 2, and       so on.
+          * Subtracting these two values: 67 - 65 = 2. This gives the relative position of 'C' with respect to 'A'.
 
-      So, for the character 'C', this code calculates its position in the alphabet, which is 3. This logic is applied to each character in the string,      resulting in an array of positions.
+          * Finally, add 1: 2 + 1 = 3. This adjustment is made because in the context of this code, 'A' is considered to be at position 1, 'B' at position 2, and so on.
+
+      So, for the character 'C', this code calculates its position in the alphabet, which is 3. This logic is applied to each character in the string, resulting in an array of positions.
 
       Here's the breakdown for a few characters:
 
-      'A': (65 - 65) + 1 = 1
-      'B': (66 - 65) + 1 = 2
-      'C': (67 - 65) + 1 = 3
-      etc...
+          'A': (65 - 65) + 1 = 1
+          'B': (66 - 65) + 1 = 2
+          'C': (67 - 65) + 1 = 3
+          etc...
        */
       .map((char) => char.charCodeAt(0) - "A".charCodeAt(0) + 1);
 
@@ -59,7 +62,8 @@ function calculateCarValue(model, year) {
     return { error: "There is an error" };
   }
 }
-
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ------------------------------------------------------------------------------------------------------------------------
 // Endpoint for handling POST requests to calculate the car value
 app.post("/calculateCarValue", (req, res) => {
   // Extract model and year from the request body
@@ -76,9 +80,28 @@ app.post("/calculateCarValue", (req, res) => {
   // Send the result as a JSON response
   res.json(result);
 });
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ------------------------------------------------------------------------------------------------------------------------
+/* 
+Start the server and listen on the specified port.
 
-// Start the server and listen on the specified port
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+It's generally a good practice to avoid calling app.listen when running tests. When you use supertest to test your Express application, it creates a virtual server to handle the requests, so there's no need to start the actual server.
+
+Here's a common pattern to handle this situation:
+
+In your main app file (e.g., app.js), you can conditionally call app.listen only if the script is being run directly and not required as a module. This allows you to start the server when running your application but avoids starting it when running tests.
+ */
+if (require.main === module) {
+  // Only start the server if this script is run directly (not required as a module)
+  app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+  });
+}
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ------------------------------------------------------------------------------------------------------------------------
+/*
+In Node.js, the module.exports statement is used to define what a module exports, making its functionality available for use in other modules. In the context of your Express application, this line specifically exports the app instance created using Express.
+ */ 
+module.exports = app;
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
