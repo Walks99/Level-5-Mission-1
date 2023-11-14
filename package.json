@@ -2,14 +2,14 @@
   "name": "level-5-mission-1",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "test": "jest --watchAll --Verbose --coverage",
     "node": "node ./src/index.cjs",
-    "nodemon": "nodemon ./src/index.cjs"
+    "nodemon": "nodemon ./src/server.js"
   
   },
   "devDependencies": {
