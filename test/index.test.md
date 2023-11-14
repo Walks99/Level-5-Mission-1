@@ -2,8 +2,8 @@
 
 ## Model Parameter Tests
 
-| Test Case | Description                                            | Expected Result                                                                      |
-| --------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| Test Case | Description                                            | Expected Result                                               |
+| --------- | ------------------------------------------------------ | ---------------------------------------------------------- |
 | TC-001    | Calculate car value correctly                          | Pass: Response status is 200, contains 'car_value' property, and 'car_value' is 6614 |
 | TC-002    | 'model' parameter is an empty string                   | Fail: Response status is 400, contains 'error' property with message                 |
 | TC-003    | 'model' parameter is null                              | Fail: Response status is 400, contains 'error' property with message                 |
