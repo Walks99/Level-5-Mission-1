@@ -1,7 +1,8 @@
-
+// Import the necessary modules:
 const express = require('express'); 
 const apiOne = require("./API's/apiOne");
 
+// Create an instance of the express application
 const server = express();
 
 server.use('/api/one', apiOne); // Mount APIOne at the /api/one path
