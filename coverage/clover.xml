@@ -1,48 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1700001205335" clover="3.2.0">
-  <project timestamp="1700001205335" name="All files">
-    <metrics statements="31" coveredstatements="30" conditionals="21" coveredconditionals="21" methods="5" coveredmethods="5" elements="57" coveredelements="56" complexity="0" loc="31" ncloc="31" packages="2" files="2" classes="2"/>
+<coverage generated="1700010575934" clover="3.2.0">
+  <project timestamp="1700010575934" name="All files">
+    <metrics statements="57" coveredstatements="55" conditionals="31" coveredconditionals="31" methods="7" coveredmethods="7" elements="95" coveredelements="93" complexity="0" loc="57" ncloc="57" packages="2" files="4" classes="4"/>
     <package name="API's">
-      <metrics statements="21" coveredstatements="21" conditionals="21" coveredconditionals="21" methods="1" coveredmethods="1"/>
+      <metrics statements="36" coveredstatements="36" conditionals="29" coveredconditionals="29" methods="2" coveredmethods="2"/>
       <file name="apiOne.js" path="/Users/benwalker/Documents/programming/Mission-Ready/Code.nosync/Level-5/Missions/Mission-1/Level-5-Mission-1/src/API's/apiOne.js">
         <metrics statements="21" coveredstatements="21" conditionals="21" coveredconditionals="21" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="20" count="9" type="stmt"/>
-        <line num="28" count="9" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="32" count="8" type="cond" truecount="7" falsecount="0"/>
-        <line num="33" count="4" type="stmt"/>
-        <line num="37" count="4" type="cond" truecount="4" falsecount="0"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="41" count="3" type="cond" truecount="4" falsecount="0"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="45" count="2" type="cond" truecount="4" falsecount="0"/>
-        <line num="46" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="9" type="stmt"/>
+        <line num="25" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="8" type="cond" truecount="7" falsecount="0"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="34" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="38" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="42" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
         <line num="50" count="1" type="stmt"/>
-        <line num="53" count="1" type="stmt"/>
-        <line num="57" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+      </file>
+      <file name="apiTwo.js" path="/Users/benwalker/Documents/programming/Mission-Ready/Code.nosync/Level-5/Missions/Mission-1/Level-5-Mission-1/src/API's/apiTwo.js">
+        <metrics statements="15" coveredstatements="15" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="21" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="26" count="5" type="cond" truecount="6" falsecount="0"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
       </file>
     </package>
     <package name="functions">
-      <metrics statements="10" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <metrics statements="21" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
       <file name="calculateCarValue.js" path="/Users/benwalker/Documents/programming/Mission-Ready/Code.nosync/Level-5/Missions/Mission-1/Level-5-Mission-1/src/functions/calculateCarValue.js">
         <metrics statements="10" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+      </file>
+      <file name="calculateRiskRating.js" path="/Users/benwalker/Documents/programming/Mission-Ready/Code.nosync/Level-5/Missions/Mission-1/Level-5-Mission-1/src/functions/calculateRiskRating.js">
+        <metrics statements="11" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="34" count="5" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="40" count="5" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="53" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
       </file>
     </package>
   </project>

@@ -1,11 +1,13 @@
 // Import the necessary modules:
 const express = require('express'); 
 const apiOne = require("./API's/apiOne");
+const apiTwo = require("./API's/apiTwo");
 
 // Create an instance of the express application
 const server = express();
 
-server.use('/api/one', apiOne); // Mount APIOne at the /api/one path
+server.use('/api/one', apiOne); // Mount apiOne at the /api/one path
+server.use('/api/two', apiTwo); // Mount apiTwo at the /api/two path
 
 // // Set the port number for the server
 const port = 3000;

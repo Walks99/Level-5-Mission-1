@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "jest --watchAll --Verbose --coverage",
-    "node": "node ./src/index.cjs",
+    "node": "node ./src/server.js",
     "nodemon": "nodemon ./src/server.js"
   
   },

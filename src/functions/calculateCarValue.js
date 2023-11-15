@@ -1,4 +1,3 @@
-// ------------------------------------------------------------------------------------------------------------------------
 // Function to calculate the car value based on the provided model and year
 function calculateCarValue(model, year) {
     try {
@@ -48,6 +47,5 @@ function calculateCarValue(model, year) {
       return { error: "There is an error" };
     }
   }
-  // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   module.exports = calculateCarValue;

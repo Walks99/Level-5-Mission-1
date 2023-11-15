@@ -6,9 +6,6 @@ const calculateCarValue = require("../functions/calculateCarValue");
 // Create an instance of the express application
 const app = express();
 
-// Set the port number for the server
-// const port = 3000;
-
 // Use the body-parser middleware to parse JSON and URL-encoded bodies
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
