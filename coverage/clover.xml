@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1700010575934" clover="3.2.0">
-  <project timestamp="1700010575934" name="All files">
-    <metrics statements="57" coveredstatements="55" conditionals="31" coveredconditionals="31" methods="7" coveredmethods="7" elements="95" coveredelements="93" complexity="0" loc="57" ncloc="57" packages="2" files="4" classes="4"/>
+<coverage generated="1700017604138" clover="3.2.0">
+  <project timestamp="1700017604138" name="All files">
+    <metrics statements="76" coveredstatements="72" conditionals="33" coveredconditionals="32" methods="9" coveredmethods="9" elements="118" coveredelements="113" complexity="0" loc="76" ncloc="76" packages="2" files="6" classes="6"/>
     <package name="API's">
-      <metrics statements="36" coveredstatements="36" conditionals="29" coveredconditionals="29" methods="2" coveredmethods="2"/>
+      <metrics statements="47" coveredstatements="47" conditionals="29" coveredconditionals="29" methods="3" coveredmethods="3"/>
       <file name="apiOne.js" path="/Users/benwalker/Documents/programming/Mission-Ready/Code.nosync/Level-5/Missions/Mission-1/Level-5-Mission-1/src/API's/apiOne.js">
         <metrics statements="21" coveredstatements="21" conditionals="21" coveredconditionals="21" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
@@ -28,6 +28,20 @@
         <line num="50" count="1" type="stmt"/>
         <line num="54" count="1" type="stmt"/>
       </file>
+      <file name="apiThree.js" path="/Users/benwalker/Documents/programming/Mission-Ready/Code.nosync/Level-5/Missions/Mission-1/Level-5-Mission-1/src/API's/apiThree.js">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
       <file name="apiTwo.js" path="/Users/benwalker/Documents/programming/Mission-Ready/Code.nosync/Level-5/Missions/Mission-1/Level-5-Mission-1/src/API's/apiTwo.js">
         <metrics statements="15" coveredstatements="15" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
@@ -48,7 +62,7 @@
       </file>
     </package>
     <package name="functions">
-      <metrics statements="21" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <metrics statements="29" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="6"/>
       <file name="calculateCarValue.js" path="/Users/benwalker/Documents/programming/Mission-Ready/Code.nosync/Level-5/Missions/Mission-1/Level-5-Mission-1/src/functions/calculateCarValue.js">
         <metrics statements="10" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="3" count="1" type="stmt"/>
@@ -61,6 +75,17 @@
         <line num="44" count="1" type="stmt"/>
         <line num="47" count="0" type="stmt"/>
         <line num="51" count="1" type="stmt"/>
+      </file>
+      <file name="calculateInsuranceQuote.js" path="/Users/benwalker/Documents/programming/Mission-Ready/Code.nosync/Level-5/Missions/Mission-1/Level-5-Mission-1/src/functions/calculateInsuranceQuote.js">
+        <metrics statements="8" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
       </file>
       <file name="calculateRiskRating.js" path="/Users/benwalker/Documents/programming/Mission-Ready/Code.nosync/Level-5/Missions/Mission-1/Level-5-Mission-1/src/functions/calculateRiskRating.js">
         <metrics statements="11" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>

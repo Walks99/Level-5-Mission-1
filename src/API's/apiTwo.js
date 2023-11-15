@@ -9,8 +9,8 @@ const app = express();
 // Use the body-parser middleware to parse JSON and URL-encoded bodies
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
 // ------------------------------------------------------------------------------------------------------------------------
+
 // Endpoint for handling POST requests to calculate the risk-rating
 app.post("/calculateRiskRating", (req, res) => {
     // Extract claim_history from the request body

@@ -19,7 +19,7 @@ const app = require("../../src/API's/apiOne"); // Adjust the path based on your 
 // ##############################################################################################################################
 // Describe block for the 'calculateCarValue' function tests. A describe block is used to test related test cases
 describe("calculateCarValue function", () => {
-  // --- INITIAL TEST CASE -----------------------------------------------------
+  // --- INITIAL: TEST CASE 1 -----------------------------------------------------
   // Test case: It should calculate car value correctly
   it("should calculate car value correctly", async () => {
     // Arrange
@@ -41,7 +41,7 @@ describe("calculateCarValue function", () => {
   // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   // EDGE CASES FOR INPUT: MODEL
-  // --- TEST CASE 1 -----------------------------------------------------
+  // --- TEST CASE 2 -----------------------------------------------------
   it("should return an error when the 'model' parameter is an empty string ", async () => {
     // Arrange
     const requestData = {
@@ -62,7 +62,7 @@ describe("calculateCarValue function", () => {
     );
   });
   // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  // --- TEST CASE 2 -----------------------------------------------------
+  // --- TEST CASE 3 -----------------------------------------------------
   it("should return an error when the 'model' parameter is null", async () => {
     // Arrange
     const requestData = {
@@ -83,7 +83,7 @@ describe("calculateCarValue function", () => {
     );
   });
   // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  // --- TEST CASE 3 -----------------------------------------------------
+  // --- TEST CASE 4 -----------------------------------------------------
   it("should return an error when the 'model' parameter is undefined", async () => {
     // Arrange
     const requestData = {
@@ -104,7 +104,7 @@ describe("calculateCarValue function", () => {
     );
   });
   // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  // --- TEST CASE 4 -----------------------------------------------------
+  // --- TEST CASE 5 -----------------------------------------------------
   it("should return an error when the 'model' parameter is false", async () => {
     // Arrange
     const requestData = {
@@ -125,7 +125,7 @@ describe("calculateCarValue function", () => {
     );
   });
   // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  // --- TEST CASE 5 -----------------------------------------------------
+  // --- TEST CASE 6 -----------------------------------------------------
   it("should return an error when the 'model' parameter contains non-alphabetical characters", async () => {
     // Arrange
     const requestData = {
@@ -148,7 +148,7 @@ describe("calculateCarValue function", () => {
   // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   // EDGE CASES FOR INPUT: YEAR
-  // --- TEST CASE 1 -----------------------------------------------------
+  // --- TEST CASE 7 -----------------------------------------------------
   it("should return an error when the 'year' parameter contains a value lower than the minimum possible valid year", async () => {
     // Arrange
     const requestData = {
@@ -169,7 +169,7 @@ describe("calculateCarValue function", () => {
     );
   });
   // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  // --- TEST CASE 2 -----------------------------------------------------
+  // --- TEST CASE 8 -----------------------------------------------------
   it("should return an error when the 'year' parameter contains a value heigher than the maximum possible valid year", async () => {
     // Arrange
     const requestData = {
@@ -190,7 +190,7 @@ describe("calculateCarValue function", () => {
     );
   });
   // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  // --- TEST CASE 3 -----------------------------------------------------
+  // --- TEST CASE 9 -----------------------------------------------------
   it("should return an error when the data-type of 'year' parameter is not a number", async () => {
     // Arrange
     const requestData = {
