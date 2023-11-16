@@ -16,11 +16,6 @@ app.post("/calculateCarValue", (req, res) => {
     // Extract model and year from the request body
     const { model, year } = req.body;
   
-    // Validate input parameters
-    // if (!model || !year || typeof year !== "number") {
-    //   return res.status(400).json({ error: "Invalid input" });
-    // }
-  
     // CONDITIONS FOR INPUT: MODEL
     if (/[^A-Z]/i.test(model)) {
       return res.status(400).json({ error: "Non-alphabetic characters cannot be used in the 'model' input" });
